@@ -1,3 +1,3 @@
-export default function createNote(note) {
-    return ("Not implemented");
+export default async function createNote(note) {   
+    return "Not implemented!";
 }
