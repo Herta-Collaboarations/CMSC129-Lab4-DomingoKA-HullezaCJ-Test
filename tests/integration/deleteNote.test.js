@@ -1,4 +1,4 @@
-import editNote from "../../src/functions/editNote";
+import createNote from "../../src/functions/createNote";
 import deleteNote from "../../src/functions/deleteNote";
 
 describe("Delete Note in \"Database\"", () => {
@@ -10,8 +10,8 @@ describe("Delete Note in \"Database\"", () => {
         expect(status).toBe(200);
         expect(body).toEqual(
             expect.objectContaining({
-                "title": "Lab Studys",
-                "content": "Updated content"
+                "title": "Lab Study",
+                "content": "Review TDD"
             })
         );              
     });
