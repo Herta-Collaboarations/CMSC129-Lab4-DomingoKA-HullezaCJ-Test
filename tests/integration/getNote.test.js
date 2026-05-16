@@ -1,7 +1,7 @@
 import getNote from "../../src/functions/getNote";
 import createNote from "../../src/functions/createNote";
 
-describe("Edit Note in \"Database\"", () => {
+describe("Read a Note in \"Database\"", () => {
     test("Valid Note ID", async () => {
         const seedNote = await createNote({"title":"Lab Study", "content":"Review TDD"});
         const id = seedNote.body.id;
