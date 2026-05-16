@@ -6,6 +6,7 @@ describe("Retrieving all Notes in \"Database\"", () => {
         expect(status).toBe(200);
         expect(body).toEqual(expect.any(Array));   
     });
+    
     test("Server Error", async () => {
         const fetchSpy = jest.spyOn(global, "fetch").mockRejectedValueOnce(
             new Error("Network connection lost")
