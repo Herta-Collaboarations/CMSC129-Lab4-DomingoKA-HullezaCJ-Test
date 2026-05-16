@@ -8,7 +8,6 @@ app.use(express.json());
 const notesDB = [];
 let dbIndex = 1;
 
-
 app.post("/notes", (req, res) => {
     try {
         const result = req.body;
