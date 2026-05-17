@@ -1,5 +1,5 @@
-import getNote from "../../src/utils/getNote";
-import createNote from "../../src/utils/createNote";
+import getNote from "../../src/functions/getNote";
+import createNote from "../../src/functions/createNote";
 
 describe("Read a Note in \"Database\"", () => {
     test("Valid Note ID", async () => {
